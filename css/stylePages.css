@@ -1,0 +1,40 @@
+/*Esse css é exclusivo para as páginas que contém as notícias por categoria*/
+.divPrincipal{
+	width: 97%;
+	display: flex;
+	flex-direction: column;
+}
+
+.divConteudo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.divConteudo > .divConteudoItem{
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 200px;
+	margin: 10px;
+	max-width: 350px;
+}
+
+.divConteudo > .divConteudoItem a{
+	font-size: 18px;
+	padding: 10px;
+	color: black;
+}
+
+.divConteudo > .divConteudoItem a:hover{
+	text-decoration: underline;
+	color: blueviolet;
+}
+
+.PrincipalTitulo{
+	padding: 10px;
+	font-size: 18px;
+	color: #264357;
+	border-radius: 10px;
+}

@@ -1,0 +1,186 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body{
+	position: relative;
+}
+
+#header{
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	height: 200px;
+	width: 100%;
+}
+
+/*Divs laterais do conteúdo dentro da main*/
+.divEquerda a{
+	color: black;
+	font-size: 17px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+.divEquerda section{
+	display: flex;
+	align-items: center;
+	height: 150px;
+	padding: 5px;
+}
+.divEquerda a:hover{
+	text-decoration: underline;
+}
+
+/*A navbar para navegação entre as páginas*/
+#menuHeader{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	width: 100%;
+	background-color: #333333;
+	transition: all .5s;
+}
+
+#menuHeader ul li{
+	transition: all .5s;
+}
+#menuHeader a{
+	font-size: 18px;
+	color: white;
+	padding: 10px;
+}
+
+#menuHeader a:hover{
+	background-color: white;
+	color: black;
+}
+
+#menuHeader a.active { background: #602b60; }
+
+
+/*Esse menu fixo é referente ao script que irá fixar a navbar*/
+.menu-fixo { position: fixed; top: 0; z-index: 99; transition: all .5s; }
+    .menu-fixo a { padding: 20px 20px !important; transition: all .5s; }
+
+/*Aqui começa o css referente ao conteúdo dentro da main*/
+.content-conteiner{
+	display: flex;
+	justify-content: center;
+	margin: 0 7%;
+	flex-wrap: wrap;
+	max-width: 100%;
+	margin-top: 50px;
+}
+
+.content-conteiner section{
+	box-shadow: 2px 2px 5px #353434;
+}
+
+.content-conteiner div{
+	padding: 2px;
+}
+
+.divEquerda{
+	max-width: 25%;
+}
+.divCentro{
+	max-width: 550px;
+}
+.divDireita{
+	max-width: 320px;
+}
+.divCentroTitulo{
+	height: 45px;
+    line-height: 45px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-style: normal;
+    text-overflow: ellipsis;
+    color: #264357;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.divCentro_row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+}
+.divCentro_row img{
+	width: 50%;
+	height: 100px;
+}
+
+.divCentro_row div{
+	width: 100%;
+}
+
+
+.divCentro_one{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.divDireita section img{
+	width: 50%;
+	height: 100px;
+}
+
+.divDireita section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1px;
+	height: 130px;
+}
+
+.divDireita div{
+	width: 100%;
+}
+.divDireita section a{
+	font-size: 14px;
+	text-align: center;
+	color: black;
+}
+
+.divDireita section a:hover{
+	text-decoration: underline;
+}
+
+/*Referente ao footer*/
+
+footer{
+	margin-top: 5px;
+	background-color: #333333;
+	text-align: center;
+}
+.footerCont{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footerCont div{
+	display: flex;
+	margin-top: 0;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+}
+
+.footerCont div a{
+	color: beige;
+	font-size: 18px;
+}
+
+.divSobre{
+	height: 126px;
+}
+
+
